@@ -8,3 +8,8 @@
     padding: 32px;
     margin: 8px;
 }
+
+.remove-note {
+    display: block;
+    margin-top: 12px;
+}
