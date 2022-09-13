@@ -6,6 +6,10 @@ button.addEventListener('click', () => {
     const note = document.createElement('div')
     note.className = 'sticky'
     
+    const removeButton = document.createElement('button')
+    removeButton.className = 'remove-note'
+    removeButton.innerText = 'Remove note'
+    
     const noteColor = document.querySelector('.note.color')
     const noteText = document.querySelector('.note.text')
     
@@ -16,6 +20,7 @@ button.addEventListener('click', () => {
         alert('Your note is too short.')
     } else {
         content.appendChild(note)
+        note.appendChild(removeButton)
     }
     
     noteText.value = ''
