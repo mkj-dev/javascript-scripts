@@ -1,0 +1,10 @@
+#content {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.sticky {
+    display: inline-block;
+    padding: 32px;
+    margin: 8px;
+}
