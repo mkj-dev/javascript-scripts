@@ -5,7 +5,7 @@ button.addEventListener('click', () => {
     
     const note = document.createElement('div')
     note.className = 'sticky'
-    
+
     const removeButton = document.createElement('button')
     removeButton.className = 'remove-note'
     removeButton.innerText = 'Remove note'
@@ -25,4 +25,8 @@ button.addEventListener('click', () => {
     
     noteText.value = ''
     noteColor.value = ''
+
+    removeButton.addEventListener('click', () => {
+        note.remove(this)
+    })
 })
