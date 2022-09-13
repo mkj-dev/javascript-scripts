@@ -11,9 +11,13 @@ button.addEventListener('click', () => {
     
     note.style.backgroundColor = noteColor.value
     note.innerText = noteText.value
-
-    noteColor.value = ''
+    
+    if (noteText.value.length < 4) {
+        alert('Your note is too short.')
+    } else {
+        content.appendChild(note)
+    }
+    
     noteText.value = ''
-
-    content.appendChild(note)
+    noteColor.value = ''
 })
